@@ -1,0 +1,64 @@
+{
+  "train_shape": [
+    48000,
+    14
+  ],
+  "validation_shape": [
+    12000,
+    13
+  ],
+  "train_date_min": "2025-01-01",
+  "train_date_max": "2025-10-31",
+  "validation_date_min": "2025-11-01",
+  "validation_date_max": "2025-12-31",
+  "train_missing": {
+    "weight": 300,
+    "market_index": 374
+  },
+  "validation_missing": {
+    "weight": 165,
+    "market_index": 249
+  },
+  "unseen_pickup_cities": [
+    "Allentown",
+    "Charlotte",
+    "Chicago",
+    "Jackson",
+    "Knoxville",
+    "Laredo",
+    "Norfolk",
+    "San Diego"
+  ],
+  "unseen_delivery_cities": [
+    "Allentown",
+    "Charlotte",
+    "Chicago",
+    "Jackson",
+    "Knoxville",
+    "Laredo",
+    "Norfolk",
+    "San Diego"
+  ],
+  "temporal_split": {
+    "train": "2025-01-01 through 2025-08-31",
+    "holdout": "2025-09-01 through 2025-10-31"
+  },
+  "baseline_metrics": {
+    "MAE": 229.09657316845033,
+    "RMSE": 670.6599545300177,
+    "R2": 0.8068628254206316,
+    "MAPE": 0.10487418950668492
+  },
+  "catboost_ensemble_metrics": {
+    "MAE": 106.81756805816313,
+    "RMSE": 632.2363094839505,
+    "R2": 0.8283594129749967,
+    "MAPE": 0.04797868696041463
+  },
+  "final_iterations_by_seed": {
+    "42": 124,
+    "123": 135,
+    "777": 166
+  },
+  "normalization_offset": 200.0
+}
